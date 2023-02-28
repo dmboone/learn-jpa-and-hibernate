@@ -1,8 +1,15 @@
 package com.springboot.learnjpaandhibernate.course;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity // Creating a mapping between our java bean and our table
 public class Course {
+	@Id
 	private long id;
+	
 	private String name;
+	
 	private String author;
 	
 	public Course() {
